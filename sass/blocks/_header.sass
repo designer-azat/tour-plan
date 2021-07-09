@@ -1,5 +1,22 @@
-.header
+.navbar
   background-color: #fff
+  &-bottom
+    background-color: $dark
+  &-menu
+    list-style-type: none
+    margin: 0
+    padding: 31px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    color: $light
+    &__link
+      text-decoration: none
+      color: inherit
+      font-weight: bold
+      font-size: 14px
+      line-height: 18px
+      text-transform: uppercase
 
   &-top
     display: flex
@@ -7,9 +24,13 @@
     justify-content: space-between
     padding-top: 40px
     padding-bottom: 40px
+    &__menu-button
+      display: none
   &__search
     margin-right: auto
     margin-left: 108px
+.logo
+  width: 177px
 .search
   display: flex
   position: relative
