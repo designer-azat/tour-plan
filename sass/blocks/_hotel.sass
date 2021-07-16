@@ -1,23 +1,26 @@
 .hotel
-  padding-top: 23px
+  padding-top: 10px
   padding-bottom: 70px
   &-info
     display: flex
     align-items: center
     justify-content: space-between
+    &__rating
+      margin-top: 12px
     &__offer
       margin-left: 14px
-      margin-top: 4px
+      margin-top: 8px
+      padding: 10px
     &__name
-      margin-top: 4px
+      margin-top: 8px
       margin-bottom: 0
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+      text-transform: uppercase
+
     &__description
       margin: 0
-  &-name
-    font-weight: bold
-    font-size: 24px
-    line-height: 30px
-    text-transform: uppercase
 
   &-wrapper
     display: flex
@@ -28,6 +31,8 @@
     line-height: 15px
 .stars
   flex-basis: 100%
+  &-rating
+    margin-right: -2px
 .offer
   font-size: 10px
   line-height: 13px
