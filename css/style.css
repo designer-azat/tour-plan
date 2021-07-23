@@ -9,16 +9,16 @@ body {
   color: #333333;
 }
 
-body .container {
+.container {
   max-width: 1110px;
   margin: auto;
 }
 
-body .img {
+.img {
   max-width: 100%;
 }
 
-body iframe {
+iframe {
   width: 100%;
   height: 100%;
 }
@@ -642,6 +642,13 @@ template {
   background-image: url(../img/arrow_prev.svg);
 }
 
+.hotel-slider__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -906,7 +913,7 @@ template {
 }
 
 .reviews {
-  padding: 40px 0 70px 0;
+  padding: 10px 0 70px 0;
 }
 
 .reviews__title {
@@ -968,7 +975,6 @@ template {
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
-  background-size: 10px;
   background-position: center;
   border: none;
   background-color: transparent;
@@ -998,7 +1004,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   margin-top: -45px;
-  margin-bottom: 32px;
+  margin-bottom: 8px;
 }
 
 .reviews-slider__avatar {
@@ -1016,6 +1022,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #EC1F46;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -1045,6 +1052,94 @@ template {
   text-align: justify;
 }
 
+.activities {
+  padding: 60px 0 98px 0;
+}
+
+.activities-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 57px;
+}
+
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 255px;
+  height: 255px;
+  position: relative;
+  padding: 24px 26px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: -1;
+}
+
+.card__image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+
+.card__title {
+  margin-top: auto;
+  margin-bottom: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.card__button {
+  padding: 7px 22px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1057,6 +1152,10 @@ template {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .card {
+    width: 230px;
+    height: 230px;
   }
 }
 
@@ -1112,6 +1211,20 @@ template {
   }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .activities {
+    padding-bottom: 70px;
+  }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 339px;
+    height: 255px;
   }
 }
 
@@ -1245,6 +1358,14 @@ template {
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
   }
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .card {
+    width: 48%;
+    height: 255px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1254,11 +1375,6 @@ template {
   .hotel-slider {
     height: 180px;
   }
-  .hotel-slider__image {
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   .hotel__slider {
     margin-bottom: 20px;
   }
@@ -1267,6 +1383,20 @@ template {
   }
   .map {
     height: 172px;
+  }
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .activities-title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .card {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
