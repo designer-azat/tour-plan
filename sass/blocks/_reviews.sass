@@ -50,11 +50,13 @@
       cursor: pointer
       z-index: 99
       &--prev
+        top: 150px
         background-image: url(../img/arrow-prev-secondary.svg)
-        left: 0
+        left: 17px
       &--next
         background-image: url(../img/arrow-next-secondary.svg)
-        right: 0
+        top: 150px
+        right: 17px
     &__profile
       display: flex
       flex-direction: column
@@ -82,6 +84,8 @@
       line-height: 13px
       margin-bottom: 4px
     &__stars
+      display: flex
+      align-items: center
       &-rating
         display: flex
         align-items: center
