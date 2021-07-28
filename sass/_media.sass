@@ -128,6 +128,10 @@
         font-size: 30px
         line-height: 38px
   .reviews
+    &__title
+      font-size: 30px
+      line-height: 38px
+      text-align: center
     &-slider
       &__item
         padding: 0 30px 30px
@@ -150,11 +154,37 @@
     width: 48%
     height: 255px
 @media (max-width: 320px)
+  .reviews
+    &-slider
+      &__button
+        &--prev
+          left: 50%
+          margin-left: -90px
+          webkit-transform: translate(-50%, 0)
+          transform: translate(-50%, 0)
+        &--next
+          right: 50%
+          margin-right: -90px
+          webkit-transform: translate(50%, 0)
+          transform: translate(50%, 0)
+      &__text
+        text-align: left
+    &__title
+      margin: 41px 38px
+      padding-right: 25px
+      width: 245px
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      text-transform: uppercase
   .logo
     width: 99px
   .hotel
     &-slider
       height: 180px
+      &__button
+        width: 12px
+        height: 12px
     &__slider
       margin-bottom: 20px
     &-right
@@ -164,8 +194,21 @@
   .activities
     padding-top: 40px
     padding-bottom: 60px
+    &-title
+      margin-bottom: 36px
+      font-size: 18px
+      line-height: 23px
     &__card
       margin-bottom: 20px
+      &__1
+        order: 1
+      &__2
+        order: 3
+      &__3
+        order: 2
+      &__4
+        order: 4
+
     &-title
       font-size: 18px
       line-height: 23px

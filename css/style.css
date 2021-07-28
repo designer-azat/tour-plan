@@ -1102,7 +1102,7 @@ template {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 255px;
-  height: 255px;
+  min-height: 255px;
   position: relative;
   padding: 24px 26px;
   border-radius: 6px;
@@ -1625,6 +1625,11 @@ template {
     font-size: 30px;
     line-height: 38px;
   }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+  }
   .reviews-slider__item {
     padding: 0 30px 30px;
   }
@@ -1657,11 +1662,41 @@ template {
 }
 
 @media (max-width: 320px) {
+  .reviews-slider__button--prev {
+    left: 50%;
+    margin-left: -90px;
+    webkit-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    margin-right: -90px;
+    webkit-transform: translate(50%, 0);
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+  }
+  .reviews-slider__text {
+    text-align: left;
+  }
+  .reviews__title {
+    margin: 41px 38px;
+    padding-right: 25px;
+    width: 245px;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+  }
   .logo {
     width: 99px;
   }
   .hotel-slider {
     height: 180px;
+  }
+  .hotel-slider__button {
+    width: 12px;
+    height: 12px;
   }
   .hotel__slider {
     margin-bottom: 20px;
@@ -1676,8 +1711,33 @@ template {
     padding-top: 40px;
     padding-bottom: 60px;
   }
+  .activities-title {
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 23px;
+  }
   .activities__card {
     margin-bottom: 20px;
+  }
+  .activities__card__1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .activities__card__2 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .activities__card__3 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .activities__card__4 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
   }
   .activities-title {
     font-size: 18px;
