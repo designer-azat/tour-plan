@@ -16,5 +16,5 @@ const reviewsSlider = new Swiper('.reviews-slider', {
     nextEl: '.reviews-slider__button--next',
     prevEl: '.reviews-slider__button--prev',
   },
-  height: {autoHeight: 'true'},
+  autoHeight: 'true',
 });
